@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to left,  lightblue, gold);
+    color: black;
+}
+header {
+    background:linear-gradient(to right, blue, yellow);
+    color: black;
+    text-align: center;
+    padding: 25px 10px;
+    border: 3px solid black;
+}
+header h1 {
+    margin:  0 0 8px;
+}
+header p {
+    margin: 0;
+    color: black;
+}
+main {
+    padding: 20px;
+}
+.search-area {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+input {
+    flex: 1;
+    min-width: 180px;
+    padding: 12px;
+    border: 1px solid lightblue;
+    border-radius: 6px;
+    font-size: 15px;
+}
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 14px;
+}
+#searchButton {
+    background: yellow;
+    color: black;
+}
+#resetButton {
+    background: gold;
+    color: black;
+}
+button:hover {
+    opacity: 0.8;
+}
+#message {
+    color: red;
+    min-height: 18px;
+}
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 20px 0;
+    font-size: 13px;
+}
+.legend span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.legend i {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+}
+.metal {
+    background: skyblue;
+}
+.nonmetal {
+    background: lime;
+}
+.metalloid {
+    background: orange;
+}
+.noble {
+    background: green;
+}
+.other {
+    background: red;
+}
+h2 {
+    margin-top: 25px;
+}
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 15px;
+}
+#periodicTable {
+    display: grid;
+    grid-template-columns: repeat(18, minmax(48px, 1fr));
+    grid-template-rows: repeat(9, 72px);
+    gap: 4px;
+    min-width: 960px;
+}
+.element {
+    min-width: 0;
+    padding: 3px;
+    border: 1px solid wheat;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.element .number {
+    font-size: 10px;
+    align-self: flex-start;
+}
+.element .symbol {
+    font-size: 19px;
+    font-weight: bold;
+}
+.element .name {
+    font-size: 9px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+.element.metal {
+    background: skyblue;
+}
+.element.nonmetal {
+    background: lime;
+}
+.element.metalloid {
+    background: orange;
+}
+.element.noble {
+    background: green;
+}
+.element.other {
+    background: red;
+}
+.element:hover {
+    outline: 3px solid blue;
+    z-index: 1;
+}
+.element.selected {
+    outline: 3px solid darkslateblue;
+    z-index: 2;
+}
+.element.highlight {
+    outline: 4px solid orange;
+    z-index: 3;
+}
+.placeholder {
+    background: whitesmoke;
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    padding: 5px;
+    border: 1px dashed black;
+}
+#details {
+    background: white;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px black;
+}
+#details h2 {
+    margin-top: 0;
+}
+#details p {
+    line-height: 1.7;
+}
+#details .big-symbol {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.note {
+    font-size: 12px;
+    color: black;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    background: wheat;
+    color: black;
+    padding: 15px;
+    margin-top: 25px;
+}
+@media (max-width: 600px){
+    main {
+        padding: 12px;
+    }
+    #details {
+        padding: 15px;
+    }
+    header h1{
+        font-size: 25px;
+    }
+}

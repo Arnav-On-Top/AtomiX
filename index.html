@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AtomiX</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>AtomiX</h1>
+            <p>Interactive Periodic Table</p>
+        </header>
+        <main>
+            <section class="search-area">
+                <input type="text" id="search" placeholder="Search element, symbol or number...">
+                <button id="searchButton">Search</button>
+                <button id="resetButton">Show All</button>
+            </section>
+            <p id="message"></p>
+            <section class="legend">
+                <span><i class="metal"></i>Metals</span>
+                <span><i class="nonmetal"></i>Nonmetals</span>
+                <span><i class="metalloid"></i>Metalloids</span>
+                <span><i class="noble"></i>Noble Gases</span>
+                <span><i class="other"></i>Other Elements</span>
+            </section>
+            <h2>Periodic Table</h2>
+            <div class="table-wrapper">
+                <div id="periodicTable"></div>
+            </div>
+            <section id="details">
+                <h2>Element Details</h2>
+                <p>Click any element to see its information here.</p>
+            </section>
+            <p class="note">
+                Atomic masses are approximate standard values.
+                Some radioactive elements have no standard atomic weight.
+            </p>
+        </main>
+        <footer>
+            <p>AtomiX | Made as a project for Hack Club Cubed YSWS</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
